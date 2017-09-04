@@ -44,7 +44,7 @@ def fadeTo(target, time1):
 	#this is the final stage, while the live strip (RGB) is not equal to the target colour we will continue running this loop.
     while int(round(RGB[0])) != target[0] or int(round(RGB[1])) != target[1] or int(round(RGB[2])) != target[2]:
         #Increasing the colours by how much they need to be changed per millisecond.
-	RGB[0] += (direction[0] * speed[0]) / time1
+        RGB[0] += (direction[0] * speed[0]) / time1
         RGB[1] += (direction[1] * speed[1]) / time1
         RGB[2] += (direction[2] * speed[2]) / time1
         print(RGB)
